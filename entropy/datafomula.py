@@ -18,7 +18,7 @@ def main():
         svg = svg.read()
         wiki = open(datapath+"wikipedia.txt",'r')
         wiki = wiki.read()
-        print(wiki,'\n')
+        fomulaextent.objects.get_or_create(number = num,description = descript,svg = svg,wikipedia = wiki)
 
 
 
