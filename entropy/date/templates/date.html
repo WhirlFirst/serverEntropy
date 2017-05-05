@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Whirl Product</title>
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+</head>
+<body  scroll="no">
+    <style>
+           p{text-indent:2em}
+    </style>
+    <div style="text-align:center;">
+        <table>
+            <tr>
+                <iframe src="{{ U }}" style="height: 590px ;overflow:hidden" name="iframepage"  frameBorder=0 !!scrolling="no" width="80%" onLoad="JavaScript:reinitIframeEND();"  ></iframe>
+            </tr>
+        </table>
+    </div>
+     <h2 style="font-family: 方正舒体;color: black"><del>所有</del>科技历史上的20{{current_time}}</h2>
+            <hr />
+        <p style="font-family: 黑体;color: black  ">{{d}}</p>
+<script type="text/javascript" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+</body>
+</html>
+
+<script type="text/javascript" language="javascript">
+
+function reinitIframe(){
+var iframe = document.getElementById("iframepage");
+try{
+    var bHeight = iframe.contentWindow.document.body.scrollHeight;
+    var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+    var height = Math.max(bHeight, dHeight);
+    iframe.height = height;
+}catch (ex){}
+}
+
+var timer1 = window.setInterval("reinitIframe()", 500); //定时开始
+
+function reinitIframeEND(){
+var iframe = document.getElementById("iframepage");
+try{
+    var bHeight = iframe.contentWindow.document.body.scrollHeight;
+    var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+    var height = Math.max(bHeight, dHeight);
+    iframe.height = height;
+}catch (ex){}
+// 停止定时
+window.clearInterval(timer1);
+
+}
+
+</script>
+
