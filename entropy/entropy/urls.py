@@ -16,8 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import include, url
 from date import views as date_views
+from home import views as home_views
+from fomula import  views as fomula_views
 urlpatterns = [
     #(r'^time/$', current_datetime),
-    url(r'^admin/', admin.site.urls),
-    url(r'',date_views.date,name='main'),
+    url(r'^date',date_views.date,name='main'),
+   # url(r'',home_views.home,name='home'),
+    url(r'^api/(.+)/$',fomula_views.fomula,name='fomuladata')
+
 ]
