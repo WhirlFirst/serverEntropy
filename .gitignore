@@ -7,4 +7,4 @@ entropy/ehthumbs.db
 entropy/Desktop.ini
 
 #python:
-entropy/*.pyc
+entropy/**/*.pyc
