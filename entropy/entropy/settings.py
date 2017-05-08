@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '0um91kazgxnitad6@en^vy(v+%3adx%#r+g#n-e#n+lt@0k%3y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*","www.whirlfirst.com","whirlfirst.com", ]
 
