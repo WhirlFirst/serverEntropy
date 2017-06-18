@@ -1,0 +1,10 @@
+#My configuration:
+entropy/.idea
+
+#Windows:
+entropy/Thumbs.db
+entropy/ehthumbs.db
+entropy/Desktop.ini
+
+#python:
+entropy/**/*.pyc
