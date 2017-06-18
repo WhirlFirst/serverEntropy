@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'date',
     'fomula',
-    'home'
+    'home',
+    'love'
 ]
 
 MIDDLEWARE = [
@@ -122,6 +123,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'collected_static')
+
 
 STATICFILES_FINDERS = (
     "django.contrib.staticfiles.finders.FileSystemFinder",
