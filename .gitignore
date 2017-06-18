@@ -8,3 +8,6 @@ entropy/Desktop.ini
 
 #python:
 entropy/**/*.pyc
+
+#server:
+/entropy/entropy.sock
